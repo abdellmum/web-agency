@@ -1,0 +1,387 @@
+/*==================Default values===========================
+  font-family : Roboto Condensed 
+
+  Code couleurs : 
+  #34C6D3 : boutons , icons ,links,lines & background
+  #41464B : Heading <h1> jusqu'a <h6>
+  #64707B : paragraphes
+  #FFF : texte avec un background noir 
+  #000 : il est toujours présent 
+===============================================================*/
+ 
+ *{
+   font-family: 'Roboto', sans-serif;
+   
+    
+ }
+body{
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+  background-color: #FFFFFF;
+
+
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+   animation-name:  zoomIn;
+    animation-duration: 10s;
+}
+
+button:focus{
+  outline: none;
+}
+
+.main-wrapper{
+  width: 1600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1599px) {
+.main-wrapper{
+    width:100%;
+    margin: 0 auto;
+}}
+
+@media (min-width: 768px) {
+.container{
+    width:600px;
+    margin: 0 auto;
+}}
+
+@media (min-width: 992px) {
+.container{
+    width:720px;
+    margin: 0 auto;
+}}
+
+@media (min-width: 1200px) {
+.container{
+    width:1400px;
+    margin: 0 auto;
+}}
+
+.header--bg{
+    
+    
+    background: url("/img/55.jpg") no-repeat;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    animation-name:  zoomIn;
+    animation-duration: 3s;
+  }
+
+.header--bg:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:linear-gradient(90deg, #64707B 0%, #34C6D3 100%);
+    opacity: 0.5;
+    z-index: -1;
+  
+
+
+  }
+
+.header .navbar{
+    padding-top: 30px;
+    margin-bottom: 200px;
+     animation-name:  zoomIn;
+    animation-duration: 10s;
+  }
+
+@media screen and (max-width: 450px) {
+      .header .navbar{
+        margin-bottom: 150px;
+      }
+    }
+
+.header .navbar-brand{
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+.header .nav li a{
+    font-size: 15px;
+    color: #fff;
+  }
+
+.header__content__title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 13px;
+    margin-bottom: 25px;
+  }
+
+.header__content__paragraph{
+    font-size: 16px;
+    color: #f8f8f8;
+    max-width: 530px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Roboto-Light;
+    margin-bottom: 50px;
+    animation-name:  zoomIn;
+    animation-duration: 10s;
+    animation-delay: 10s;
+  }
+
+.header .navbar .navbar-nav > li > a, .header .navbar .navbar-brand, .header .navbar .navbar-nav > li > a:focus{
+    background-color: transparent;
+    color: #fff;
+    animation-name:  zoomIn;
+    animation-duration: 10s;
+    -moz-animation-delay: 10s;
+  }
+
+.navbar-header button{
+  background-color: #ddd;
+}
+
+.navbar-header .icon-bar{
+  background-color: #fff !important;
+}
+
+@media screen and (max-width: 768px){
+  .navbar-collapse{
+    float: left;
+  }
+
+  .header .button{
+    margin-bottom: 10px;
+  }
+
+  .header .header__content__title{
+    letter-spacing: 6px;
+  }
+}
+
+.button{
+  padding: 9px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  color:rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  display: inline-block;
+  background-color: transparent;
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+.button:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: inherit;
+    -webkit-filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.77));
+            filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.77));
+  }
+
+.button--hover:hover{
+    border: inherit !important;
+  }
+
+.button:hover{
+    background-color: #FFFFFF;
+    color: #00aafe;
+    -webkit-box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
+            box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
+
+  }
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 5;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+
+
+h1{
+  text-decoration: underline #34C6D3;
+  text-align:center;
+  padding-top: 3rem;
+font-family:serif;
+  font-size:3em;
+  color:#bbb
+  
+}
+#team{
+  display:flex;
+  flex-wrap: wrap;
+  flex-grow:3;
+}
+.card {
+    display: inline;
+  width:33%;
+  min-width: 250px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin:0 0.5% 1% 0;
+  display:inline-block
+}
+.card:nth-of-type(3n){
+  margin-right:0;
+}
+.card img {
+    
+  width: 100%;
+  min-height:100%;
+  transition:all 0.9s
+}
+.card:hover img{
+ transform:scale(1.2,1.2)
+}
+.data {
+  position: absolute;
+  bottom: 5%;
+  background:#34c6d3;
+  text-align:center;
+  width: 90%;
+  height: 80px;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px 5%;
+  box-sizing: border-box;
+  opacity: 0.8;
+  transition: all 0.4s
+}
+
+.card:hover .data {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.9;
+  padding:90px 10%
+}
+
+.data h2 {
+  margin: 0 0 5px 0;
+  transition:color 0.4s
+}
+
+.data p {
+  opacity: 0;
+  text-align:justify;
+  transition: all 0.2s
+}
+
+.card:hover .data p,.card:hover .data a {
+  opacity: 1
+}
+
+.data a{
+  color:#333;
+  text-decoration:none;
+  padding:20px;
+  opacity:0
+}
+.data a:hover,.card:hover h2{
+  color:#38c
+}
+
+@media (max-width:799px){
+  .card {width:100%;margin-right:0}
+}
+
+
+
+
+.btn-twtr{
+  color:#ddd;
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-family:sans-serif;
+  font-weight:600;
+  margin-top:100px;
+  opacity:0.8
+}
+.equipe{
+  background-color: #34c6d3;
+  font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
