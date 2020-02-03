@@ -1,0 +1,151 @@
+/*==================Default values===========================
+  font-family : Roboto Condensed 
+
+  Code couleurs : 
+  #34C6D3 : boutons , icons ,links,lines & background
+  #41464B : Heading <h1> jusqu'a <h6>
+  #64707B : paragraphes
+  #FFF : texte avec un background noir 
+  #000 : il est toujours présent 
+  ===============================================================*/
+  body,html{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif  !important;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+/* Qui Sommes */
+#somme-nous{
+  background-color: #64707B;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  margin-top: 5%;
+  
+}
+.quisomme{ 
+  font-weight: bold !important;
+  padding-bottom: 8%;
+
+}
+
+.prg1{
+  width: 90%;
+  margin: 5%;
+  font-size: 15px;
+  color: #fff;
+  
+}
+
+#img3{
+  
+  width: 100%;
+  height: 66vh;
+  
+  
+}
+@media (max-width:768px){
+  .somme-nous{
+  
+    display: block
+}
+.prg1{
+  text-align: center;
+}
+#quisomme{
+  text-align: center;
+  font-size: 2em;
+
+  
+}
+.btn{
+  margin-left: -10%;
+}
+
+   }
+/* fin section css sommes-nous */
+
+
+  /* ====Réalisation Css===== */
+
+  #realise{
+    margin-top: 7%;
+
+  }
+
+ 
+  #nosreal{
+  
+  text-align: center;
+  padding-bottom: 2%;
+  font-weight: bold;
+  
+}
+.image{
+  width: 270PX;
+  height: 270PX;
+  padding:22px ;
+}
+
+.container1 {
+   width: 100%; 
+  margin: 10px auto;
+  display: table;
+  box-sizing: border-box;
+  
+
+}
+.row1 {
+  margin: 8px 0 ;
+
+}
+
+.container1 .col-xs-12 .details {
+  position: absolute ;
+  top: 30px;
+  left: 40px;
+  bottom: 30px;
+  right: 80px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 220px;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.container1 .col-xs-12:hover .details{
+  transform: scaleY(1)
+}
+.container1 .col-xs-12 .details .cent{
+  position: absolute;
+  top: 80px;
+  bottom: 20PX;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+
+}
+
+
+.container1 .col-xs-12 .details .cent h3{
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: white;
+}
+ .container1 .col-xs-12 .details .cent p{ 
+  margin: 5px 0 0;
+  padding: 4px;
+}
+.cent a{
+  color: #34C6D3;
+}
+
+/* ===fin Réalisation=== */
+
+
+
+
+
