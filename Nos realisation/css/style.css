@@ -42,7 +42,7 @@
 #img3{
   
   width: 100%;
-  height: 66vh;
+  height: 70vh;
   
   
 }
@@ -72,6 +72,8 @@
 
   #realise{
     margin-top: 7%;
+    
+    
 
   }
 
@@ -131,7 +133,7 @@
 
 .container1 .col-xs-12 .details .cent h3{
   margin: 0;
-  padding: 0;
+  padding: 2%;
   font-size: 25px;
   color: white;
 }
