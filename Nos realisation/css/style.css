@@ -127,15 +127,17 @@
   text-align: center;
   padding: 20px;
   color: #fff;
+  
 
 }
 
 
 .container1 .col-xs-12 .details .cent h3{
   margin: 0;
-  padding: 2%;
+  
   font-size: 25px;
   color: white;
+  
 }
  .container1 .col-xs-12 .details .cent p{ 
   margin: 5px 0 0;
