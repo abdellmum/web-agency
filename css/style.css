@@ -122,6 +122,13 @@ header,
   }
 }
 
+/* somme nous */
+
+#gallery{
+  margin-top: 5%;
+}
+
+
 /* fin de nous services */
 
 /*  */
@@ -133,8 +140,8 @@ header,
        
 
   text-align: center;
-  padding-bottom: 2%;
   font-weight: bold;
+  padding-top: 5%;
 
 }
 .image{
@@ -221,7 +228,6 @@ font-family:serif;
     display: inline;
   width:33%;
   min-width: 250px;
-  height: 300px;
   overflow: hidden;
   position: relative;
   margin:0 0.5% 1% 0;
