@@ -1,0 +1,449 @@
+ /* karim style */
+ *{
+font-family: 'Roboto Condensed', sans-serif ;
+font-weight: small;
+margin:0px ;
+padding:0px ;
+}
+#basicExampleNav{
+
+  animation-name:  zoomIn;
+    animation-duration: 10s;
+
+}
+ 
+ 
+ html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/la.jpg")no-repeat center center fixed;
+   
+    background-size: cover;
+    animation-name:   bounceInLeft;
+    animation-duration: 3s;
+}
+
+#button1{
+   border-radius: 30px;
+  font-size: 16px;
+  color:black;
+  border: 1px solid #34C6D3;
+  display: inline-block;
+  background-color: transparent;
+  position: relative;
+  animation-name:zoomIn;
+  animation-duration: 6s;
+}
+
+
+.top-nav-collapse {
+    background-color: #24355C;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color:#24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color : #34C6D3;
+    }
+  }
+
+   /* section service */
+
+.services h1{
+  color: #000;
+  display: inline-block;
+  margin-top: 40px;
+  padding-bottom: 10px;
+
+}
+
+.services{
+      background-color: #f1f1f1;
+  
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.cen{
+
+  width: 100;
+  max-width:1200px ;
+  margin: auto;
+  overflow: hidden;
+  padding: 15px;
+
+}
+.service{
+  display: inline-block;
+  width: 33.33%;
+  box-sizing: border-box;
+  transition: 0.4s;
+  padding: 10px;
+  float: right;
+
+}
+.service:hover{
+  background: #ddd;
+}
+.service i {
+  color: #34c4d3;
+  font-size:30px ;
+  margin-bottom: 30px ;
+}
+ .service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and  (max-width:800px) {
+  .service{
+    width: 50%;
+
+  }
+}
+@media screen and  (max-width:500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+/* somme nous */
+
+#gallery{
+  margin-top: 5%;
+}
+
+
+/* fin de nous services */
+
+/*  */
+#realise{
+      background-color: #f1f1f1;
+}
+
+  #nosreal{
+       
+
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+
+}
+.image{
+  width: 270PX;
+  height: 270PX;
+  padding:22px ;
+}
+
+.container1 {
+   width: 100%; 
+  margin: 10px auto;
+  display: table;
+  box-sizing: border-box;
+
+
+}
+.row1 {
+  margin: 8px 0 ;
+
+}
+
+.container1 .col-xs-12 .details {
+  position: absolute ;
+  top: 30px;
+  left: 40px;
+  bottom: 30px;
+  right: 80px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 220px;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.container1 .col-xs-12:hover .details{
+  transform: scaleY(1)
+}
+.container1 .col-xs-12 .details .cent{
+  position: absolute;
+  top: 80px;
+  bottom: 20PX;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+
+
+}
+
+
+.container1 .col-xs-12 .details .cent h3{
+  margin: 0;
+  font-size: 25px;
+  color: white;
+
+}
+ .container1 .col-xs-12 .details .cent p{ 
+  margin: 5px 0 0;
+  padding: 4px;
+}
+.cent a{
+  color: #34C6D3;
+}
+
+/* ===fin Réalisation=== */
+
+ /*  style la team by kim */
+ .lateam h1{
+  padding-bottom: 30px;
+ 
+  
+  text-align:center;
+  padding-top: 3rem;
+font-family:serif;
+  font-size:3em;
+  color:rgba(0, 0, 0, 0.9);
+  
+}
+#team{
+  display:flex;
+  flex-wrap: wrap;
+  flex-grow:3;
+}
+.card {
+    display: inline;
+  width:33%;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  margin:0 0.5% 1% 0;
+  display:inline-block
+}
+.card:nth-of-type(3n){
+  margin-right:0;
+}
+.card img {
+    
+  width: 100%;
+  min-height:100%;
+  transition:all 0.9s
+}
+.card:hover img{
+ transform:scale(1.2,1.2)
+}
+.data {
+  position: absolute;
+  bottom: 5%;
+  background:rgba(241, 239, 239, 0.9);
+  text-align:center;
+  width: 90%;
+  height: 80px;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px 5%;
+  box-sizing: border-box;
+  opacity: 0.8;
+  transition: all 0.4s
+}
+
+.card:hover .data {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.9;
+  padding:90px 10%
+}
+
+.data h2 {
+  margin: 0 0 5px 0;
+  transition:color 0.4s
+}
+
+.data p {
+  opacity: 0;
+  text-align:justify;
+  transition: all 0.2s
+}
+
+.card:hover .data p,.card:hover .data a {
+  opacity: 1
+}
+
+.data a{
+  color:#333;
+  text-decoration:none;
+  padding:20px;
+  opacity:0
+}
+.data a:hover,.card:hover h2{
+  color:whitesmoke;
+}
+
+@media (max-width:799px){
+  .card {width:100%;margin-right:0}
+}
+/* end style team by kim */
+
+
+
+/* .client{ */
+
+.wrapper{
+ width: 1200px;
+ margin: 0 auto;
+}
+
+.section-padding{
+ padding: 15px 0;
+
+}
+.owl-dot{
+ display: inline-block;
+ height: 15px !important;
+ width: 15px !important;
+ background-color: #000 !important;
+ border-radius: 50%;
+ margin: 0 6px;
+ padding-top: 3%;
+}
+.owl-dots{
+text-align: center;
+}
+.owl-dot.active{
+background-color: #34c4d3 !important;
+}
+#img88{
+  width: 230px;
+  height: 200px;
+}
+#img89{
+  width: 230px;
+  height: 200px;
+}
+#img90{
+  width: 230px;
+  height: 200px;
+}
+#img91{
+  width: 230px;
+  height: 200px;
+}
+
+#img92{
+  width: 230px;
+  height: 200px;
+}
+#img93{
+  width: 230px;
+  height: 200px;
+}
+@media (max-width:400px){
+  #clients1 {width:100%;
+              text-align: center;
+  }
+/* fin section client */
+
+/* section pricing  start*/
+
+#pricing-background {
+  background-image: url(../img/bitcoin.jpg) !important;
+  background-size: cover !important;
+}
+/* section pricing end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+   @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 5;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
